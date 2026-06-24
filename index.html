@@ -1,33 +1,246 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Дмитрий Суслов</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Дмитрий Суслов | Junior .NET Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#0d1117;
+    color:#e6edf3;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+header{
+    text-align:center;
+    padding:60px 0;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    color:#8b949e;
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.links{
+    margin-top:25px;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    padding:10px 18px;
+    border:1px solid #30363d;
+    border-radius:10px;
+    display:inline-block;
+}
+
+.links a:hover{
+    background:#161b22;
+}
+
+.section{
+    margin-top:60px;
+}
+
+.section h2{
+    margin-bottom:20px;
+    color:#58a6ff;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:#161b22;
+    padding:10px 16px;
+    border-radius:8px;
+    border:1px solid #30363d;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:14px;
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#c9d1d9;
+}
+
+footer{
+    text-align:center;
+    margin-top:80px;
+    padding:30px;
+    color:#8b949e;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Дмитрий Суслов</h1>
 
-    <p>Junior .NET Developer</p>
+<div class="container">
 
-    <h2>Навыки</h2>
+<header>
 
-    <ul>
-        <li>C#</li>
-        <li>.NET</li>
-        <li>WPF</li>
-        <li>MAUI</li>
-        <li>SQL</li>
-        <li>Python</li>
-        <li>Linux</li>
-    </ul>
+<h1>Дмитрий Суслов</h1>
 
-    <h2>Проекты</h2>
+<p>Junior .NET Developer / Software Developer</p>
 
-    <ul>
-        <li>Steam Authenticator MAUI</li>
-        <li>VPN Management Platform</li>
-        <li>Unity Multiplayer Prototype</li>
-    </ul>
+<div class="links">
+<a href="https://github.com/F1enddd">GitHub</a>
+<a href="mailto:dsus26@mail.ru">Email</a>
+<a href="https://t.me/F1enddd">Telegram</a>
+</div>
+
+</header>
+
+<section class="section">
+
+<h2>Обо мне</h2>
+
+<p>
+Выпускник специальности «Информационные системы и программирование».
+Основной стек — C# и .NET. Также работаю с Python, SQL и Linux.
+Интересуюсь backend-разработкой, автоматизацией и инфраструктурой.
+Люблю разбираться в сложных системах и доводить проекты до рабочего состояния.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Технологии</h2>
+
+<div class="skills">
+
+<div class="skill">C#</div>
+<div class="skill">.NET</div>
+<div class="skill">WPF</div>
+<div class="skill">MAUI</div>
+<div class="skill">Entity Framework</div>
+<div class="skill">SQL</div>
+<div class="skill">PostgreSQL</div>
+<div class="skill">MySQL</div>
+<div class="skill">SQL Server</div>
+<div class="skill">Python</div>
+<div class="skill">FastAPI</div>
+<div class="skill">Aiogram</div>
+<div class="skill">Linux</div>
+<div class="skill">Ubuntu</div>
+<div class="skill">Git</div>
+<div class="skill">Cloudflare</div>
+<div class="skill">Unity</div>
+<div class="skill">Blender</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Проекты</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Steam Authenticator MAUI</h3>
+<p>
+Кроссплатформенная реализация Steam Desktop Authenticator
+на .NET MAUI. Поддерживает Windows и Android,
+работает с SDA-файлами и позволяет переносить аккаунты
+между устройствами.
+</p>
+</div>
+
+<div class="card">
+<h3>VPN Management Platform</h3>
+<p>
+Собственная VPN-платформа для более чем 70 пользователей.
+Telegram-бот на Python, FastAPI, Robokassa,
+автоматическая выдача доступа, личный кабинет,
+управление серверами и интеграция с X-UI.
+</p>
+</div>
+
+<div class="card">
+<h3>Unity Multiplayer Prototype</h3>
+<p>
+Экспериментальная многопользовательская игра
+с собственным сетевым кодом на UDP-сокетах
+без использования готовых сетевых решений.
+</p>
+</div>
+
+<div class="card">
+<h3>Linux Infrastructure</h3>
+<p>
+Развёртывание и сопровождение Linux-серверов,
+настройка VPN-инфраструктуры,
+Cloudflare и сервисов автоматизации.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Образование</h2>
+
+<p>
+Информационные системы и программирование<br>
+Выпуск 2026
+</p>
+
+</section>
+
+<footer>
+
+<p>
+© Дмитрий Суслов • Екатеринбург
+</p>
+
+</footer>
+
+</div>
 
 </body>
 </html>
