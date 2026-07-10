@@ -224,7 +224,8 @@ footer{
         requestAnimationFrame(animate)
     }
     
-    addBalls(100)
+	const countOfBalls = Math.floor((canvas.width * canvas.height) / 20000)
+    addBalls(countOfBalls)
     animate()
 </script>    
     
